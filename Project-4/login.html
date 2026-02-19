@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatekeeper UI-login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
+     <a href="index.html" class="home-btn">
+           <i class="fa-solid fa-house"></i>
+           Back to Home
+        </a>
+    <div class="container">
+      <div class="img">
+        <img src="login.svg" alt="login-IMAGE" />
+      </div>
+
+      <div class="login-context">
+        <h1>Welcome Back!</h1>
+        <p>Please enter your details</p>
+
+        <form action="#">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <div class="password-options">
+            <div>
+              <input type="checkbox" id="showPassword" />
+              <label for="showPassword">Show password</label>
+            </div>
+            <a href="resetPassword.html">Forgot Password?</a>
+          </div>
+
+          <button type="submit">Login</button>
+        </form>
+
+        <p class="signup-text">
+          Don't have an account? <a href="signup.html">Sign up</a>
+        </p>
+
+        <div class="divider">
+          <span>OR</span>
+        </div>
+
+        <a id="google-login"  class="google-btn">
+            <i class="fa-brands fa-google"></i>
+          Continue with Google
+        </a>
+      </div>
+    </div>
+    <script src="login.js" defer type="module"></script>
+  </body>
+</html>
